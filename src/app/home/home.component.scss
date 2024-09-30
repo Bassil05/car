@@ -1,0 +1,49 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    padding: 45px 0 45px;
+    background-color:rgb(255, 102, 0);
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+.region-title {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.car-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33% - 30px);
+    text-align: center;
+    padding: 10px;
+}
+.car-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+.car-item p {
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+@media screen and (max-width:767px){
+}

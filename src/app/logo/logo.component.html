@@ -1,0 +1,10 @@
+<div class="main">
+  <div *ngFor="let car of newList " class="card" style="width: 18rem;">
+      <img [src]="car.imgUrl1" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Manufacturer : {{car.manufacturer}}</h5>
+        <h5 class="card-title">Price : {{car.price}}</h5>
+        <button (click)="seeDetails(car)" class="btn">Detailed description</button>
+      </div>
+    </div>
+</div>

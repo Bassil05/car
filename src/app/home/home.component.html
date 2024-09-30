@@ -1,0 +1,28 @@
+<body>
+    <h1>Car Brands</h1>
+    <div class="container">
+        <div class="region-title">American Brands</div>
+        <div class="car-list">
+            <div *ngFor="let car of americanLogo" class="car-item">
+                <img (click)="seedetails(car.index)" [src]="car.img" alt="BMW Logo">
+                <p>{{car.logoName}}</p>
+            </div>
+        </div>
+        
+        <div class="region-title">European Brands</div>
+        <div class="car-list">
+            <div *ngFor="let car of europeanLogo" class="car-item">
+                <img (click)="seedetails(car.index)" [src]="car.img" alt="BMW Logo">
+                <p>{{car.logoName}}</p>
+            </div>
+        </div>
+
+        <div class="region-title">Asian Brands</div>
+        <div class="car-list">
+            <div *ngFor="let car of asianLogo" class="car-item">
+                <img (click)="seedetails(car.index)" [src]="car.img" alt="BMW Logo">
+                <p>{{car.logoName}}</p>
+            </div>
+        </div>
+    </div>
+</body>
